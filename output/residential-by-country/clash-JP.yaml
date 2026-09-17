@@ -4,33 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: www.shopify.com
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  server: 207.148.112.220
   port: 443
   udp: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: guanwang.awsno.com
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /hls/cctv5phd.m3u8
+    path: /discuss?ed=2560
     headers:
-      Host: guanwang.awsno.com
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -4,22 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "www.shopify.com",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "207.148.112.220",
       "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "security": "auto",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "guanwang.awsno.com",
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/hls/cctv5phd.m3u8",
+        "path": "/discuss?ed=2560",
         "headers": {
-          "Host": "guanwang.awsno.com"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -28,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
