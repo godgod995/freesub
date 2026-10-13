@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 45.130.125.160
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 172.67.199.161
   port: 443
   udp: true
   type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  password: O5+31W&l1TnaLNaEfqur
+  sni: u3DANGs7bGo2yRJz4uhXMt3-M.e5Iq1Vr7gI52Ww7-83T0H6FUXI1D.WOrKerS.deV
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
+    path: /tr/wITkfX2lvDk9IF41MvgctE8e7KWPbYpS?ed=2560
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 rules:
 - MATCH,PROXIES
